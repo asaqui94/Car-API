@@ -1,0 +1,149 @@
+body{
+    background-color: black;
+}
+
+.carpi-nav{
+    display: flex;
+    justify-content: space-between;
+}
+
+.carpi-nav img{
+    width: 25%;
+    max-width: 100%;
+    margin-left: 2vw;
+}
+
+ul#horizontal-list{
+    min-width: 650px;
+    list-style: none;
+    padding-top: 20px;
+}
+
+ul#horizontal-list li, ul#horizontal-list a{
+    display: inline;
+    text-decoration: none;
+    padding: 100 vw;
+    color: white;
+}
+
+ul#horizontal-list a:nth-last-child(1){
+    border: 2px solid goldenrod;
+    padding: 5px;
+    border-radius: 11px;
+    margin: 10px;
+}
+ul#horizontal-list a:nth-last-child(2){
+    border: 2px solid navy;
+    padding: 5px;
+    border-radius: 11px;
+    margin: 10px;
+}
+ul#horizontal-list a:nth-last-child(3){
+    border: 2px solid olivedrab;
+    padding: 4px;
+    border-radius: 11px;
+    margin: 10px;
+}
+
+ul#horizontal-list a:nth-last-child(4){
+    border: 2px solid silver;
+    padding: 5px;
+    border-radius: 11px;
+    margin: 10px;
+}
+
+#header-text{
+    padding: 2vw;
+    color: white;
+}
+
+.header-image{
+    width: 82%;
+    max-width: 100%;
+}
+
+#middle-text{
+    padding: 1.5vw;
+    text-align: center;
+    margin-top: 10vh;
+    color: whitesmoke;
+}
+
+.btn1{
+    background-color: goldenrod;
+    border: 2px solid goldenrod;
+    border-radius: 11px;
+    
+}
+
+.btn2{
+    background-color: whitesmoke;
+    color: goldenrod;
+    border: 3px solid goldenrod;
+    border-radius: 11px;
+}
+
+#order-car,#varieties,#payments{
+    margin-bottom: 10vh;
+    width: 100%;
+    max-width: 80%;
+    margin: ;
+}
+
+#features-section{
+    margin: 8vw;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    color: whitesmoke;
+    
+}
+
+#varieties{
+    margin-top: 7vh;
+}
+
+#guarantee{
+    width: 75;
+    max-width: 80%;
+    margin-left: 3vw;
+}
+
+.guarantee-text{
+    color: wheat;
+    text-align: center;
+}
+
+.guarantee-paragraph{
+    color: whitesmoke;
+}
+
+.btn3{
+    background-color: whitesmoke;
+    color: goldenrod;
+    border: 3px solid goldenrod;
+    border-radius: 11px;
+}
+
+.btn4{
+    background-color: goldenrod;
+    border: 2px solid goldenrod;
+    border-radius: 11px;
+}
+
+.footer-text-flex{
+    display: flex;
+    flex-direction: column;
+    margin-top: 3vw;
+    color: whitesmoke;
+}
+
+#footer-logo{
+    width: 100%;
+    max-width: 100%;
+}
+
+#footer{
+    border-top: 3px solid gainsboro;
+    margin-top: 15vh;
+}
