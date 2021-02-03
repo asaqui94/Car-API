@@ -147,3 +147,11 @@ ul#horizontal-list a:nth-last-child(4){
     border-top: 3px solid gainsboro;
     margin-top: 15vh;
 }
+
+.signin-header, .signup-header{
+    color: white;
+}
+
+#email-field, #pass-field{
+    color: white;
+}
