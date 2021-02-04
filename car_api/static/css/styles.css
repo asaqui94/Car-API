@@ -155,3 +155,7 @@ ul#horizontal-list a:nth-last-child(4){
 #email-field, #pass-field{
     color: white;
 }
+
+.or-text{
+    color: white;
+}
