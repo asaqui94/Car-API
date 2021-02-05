@@ -87,7 +87,6 @@ ul#horizontal-list a:nth-last-child(4){
     margin-bottom: 10vh;
     width: 100%;
     max-width: 80%;
-    margin: ;
 }
 
 #features-section{
@@ -157,5 +156,33 @@ ul#horizontal-list a:nth-last-child(4){
 }
 
 .or-text{
+    color: white;
+}
+
+.hero-section{
+    height: 95vh;
+    background-image:linear-gradient(to right bottom, rgba(72, 192, 82, 0.37), rgba(212, 34, 72, 0.541)), url(../images/luxary_car.jpg);
+    background-size: cover;
+    background-position: 35% 50%;
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 80vh, 0 100%);
+    clip-path:polygon(0 0, 100% 0, 100% 80vh, 0 100%);
+    position: relative;
+}
+
+.profile-header-text{
+    display:flex;
+    justify-content: center;
+    padding-top: 20%;
+    left: 20rem;
+    top: 10rem;
+    color: black;
+    font-size: 5vw;
+    font-weight: bold;
+    font-family: fantasy;
+}
+
+.profile-details{
+    font-weight: bold;
+    font-family: fantasy;
     color: white;
 }

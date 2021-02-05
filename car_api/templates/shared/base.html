@@ -24,8 +24,8 @@
                 <a href="">
                     <li>The Collection</li>
                 </a>
-                <a href="">
-                    <li>FAQ</li>
+                <a href="{{ url_for('profile') }}">
+                    <li>Profile</li>
                 </a>
 
                 {% if current_user.is_authenticated %}

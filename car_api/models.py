@@ -1,4 +1,4 @@
-from car_api import app, db, login_manager
+from car_api import app, db, login_manager, ma
 import uuid
 from datetime import datetime
 from werkzeug.security import generate_password_hash, check_password_hash
@@ -17,7 +17,7 @@ class User(db.Model, UserMixin):
     email = db.Column(db.String(150), nullable=False)
     password = db.Column(db.String, nullable=True, default='')
     g_auth_verify = db.Column(db.Boolean, default=False)
-    token = db.Column(db.String, default='')
+    token = db.Column(db.String, default='', unique = True)
     date_created = db.Column(db.DateTime, nullable=False, default=datetime.utcnow)
     car = db.relationship('Car', backref = 'owner', lazy = True)
 
@@ -40,8 +40,8 @@ class User(db.Model, UserMixin):
         self.pw_hash = generate_password_hash(password)
         return self.pw_hash
 
-        def __repr__(self):
-            return f'User {self.email} has been added to the database.'
+    def __repr__(self):
+        return f'User {self.email} has been added to the database.'
 
 class Car(db.Model):
     id = db.Column(db.Integer, primary_key=True)
@@ -69,3 +69,11 @@ class Car(db.Model):
             "model": self.model,
             "year": self.year
         }
+
+class CarSchema(ma.Schema):
+    class Meta:
+        fields = ['id', 'name', 'price', 'model', 'year']
+
+
+car_schema = CarSchema()
+cars_schema = CarSchema(many = True)
